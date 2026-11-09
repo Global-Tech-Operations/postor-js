@@ -7,7 +7,7 @@ Cliente oficial de la **API de membresía de [Postor](https://postor.com.mx)**. 
 ## Antes de empezar
 
 1. [Regístrate en Postor](https://app.postor.com.mx/registro).
-2. [Selecciona y activa una membresía](https://postor.com.mx/precios): Radar, Análisis, Mesa o Mesa Plus.
+2. [Elige y contrata una suscripción de pago](https://postor.com.mx/precios): Radar, Análisis, Mesa o Mesa Plus. La membresía debe estar activa para usar la API.
 3. En [Configuración → API de membresía](https://app.postor.com.mx/configuracion?section=api-miembros), crea una llave. Empieza con **Consultar** y concede otros permisos sólo si tu integración los necesita.
 4. Guarda la llave en el gestor de secretos de tu servidor como `POSTOR_API_KEY`. Sólo se muestra una vez.
 

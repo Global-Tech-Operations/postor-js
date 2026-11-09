@@ -5,7 +5,7 @@ Official SDK for the [Postor](https://postor.com.mx) membership API. Search Mexi
 ## Get access
 
 1. [Register for a Postor account](https://app.postor.com.mx/registro).
-2. [Choose and activate Radar, Análisis, Mesa or Mesa Plus](https://postor.com.mx/precios).
+2. [Purchase a paid subscription: Radar, Análisis, Mesa or Mesa Plus](https://postor.com.mx/precios). Your membership must be active to use the API.
 3. Create a personal key in [Settings → Membership API](https://app.postor.com.mx/configuracion?section=api-miembros).
 4. Store it as `POSTOR_API_KEY` in your server's secret manager.
 
