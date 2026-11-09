@@ -1,0 +1,64 @@
+{
+  "name": "postor-sdk",
+  "version": "1.0.0",
+  "description": "Official JavaScript and TypeScript SDK for Postor: Mexican public procurement, tender search, analysis and projects with your membership.",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./catalog.json": "./catalog.json",
+    "./openapi.json": "./openapi.json"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "operations.d.ts",
+    "catalog.json",
+    "openapi.json",
+    "README.md",
+    "README.en.md",
+    "AI.md",
+    "LICENSE",
+    "examples"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "test": "node --test __tests__/*.test.js",
+    "prepublishOnly": "npm test && npm run test:types",
+    "test:types": "tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext --lib ES2022,DOM __tests__/types.test.ts"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Global-Tech-Operations/postor-js.git"
+  },
+  "homepage": "https://postor.com.mx/api-miembros",
+  "bugs": {
+    "url": "https://github.com/Global-Tech-Operations/postor-js/issues"
+  },
+  "keywords": [
+    "postor",
+    "licitaciones",
+    "mexico",
+    "comprasmx",
+    "compranet",
+    "public-procurement",
+    "government-contracts",
+    "tenders",
+    "typescript",
+    "sdk",
+    "api"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}
